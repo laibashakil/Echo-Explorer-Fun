@@ -24,7 +24,7 @@ Before running the application, ensure you have the following dependencies insta
 
 4.  Run the application using the following command:
         
-    `streamlit run app.py` 
+    `streamlit run main.py` 
     
 
 ## Usage
