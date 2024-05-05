@@ -1,54 +1,49 @@
+# VisioFun
 
-# Echo Explorer Fun
-
-This project is a Streamlit-based tool designed to enhance interaction and accessibility for the visually impaired community through audio cues and text-to-speech features. Users can engage in various activities such as guessing animal sounds, solving riddles, taking quizzes, and generating visual descriptions using text inputs.
+VisioFun is an interactive application designed to provide entertainment and assistance to visually impaired individuals. This project leverages various technologies to offer a range of features aimed at enhancing user experience and engagement.
 
 ## Features
-- **Guess the Animal Sound**: Listen to animal sounds and guess the corresponding animal.
-- **Riddles**: Listen to audio riddles and type your answers.
-- **Quiz**: Test your knowledge with multiple-choice questions.
-- **Visualization Helper**: Generate vivid descriptions of objects or places.
 
-## Prerequisites
-Before running the application, ensure you have the following dependencies installed:
-- `Streamlit`
-- `gTTS` (Google Text-to-Speech)
-- `cohere` (Cohere API for text generation)
-- Ensure Python 3.6 or higher is installed on your system.
+### 1. Describe Image
+- Upload an image and receive a descriptive text generated using a combination of machine learning and natural language processing.
+- The application uses a pre-trained MobileNet model for image recognition and the Cohere API for generating textual descriptions.
+- Additionally, the generated description can be converted into speech for auditory feedback.
 
-## Setup
-1. Clone this repository to your local machine.
-2. Install the required dependencies using pip:
+### 2. Imagine the World
+- Enter the name of an object or place you want to visualize, and the application generates a descriptive text.
+- The user provides input, prompting the application to produce descriptive text using the Cohere API.
+- The generated text is converted into speech for auditory output.
 
-   `pip install streamlit gtts cohere`
+### 3. Guess the Animal Sound
+- Listen to various animal sounds and guess the corresponding animals.
+- The application provides a set of animal sounds for users to identify, enhancing auditory recognition skills.
 
-4.  Run the application using the following command:
-        
-    `streamlit run main.py` 
-    
+### 4. Riddles
+- Listen to audio riddles and type your answers.
+- Users engage in a riddle-solving activity, enhancing cognitive abilities and critical thinking.
+
+### 5. Quiz
+- Participate in a quiz featuring multiple-choice questions.
+- Users answer questions across various topics, providing an interactive learning experience.
 
 ## Usage
 
-1.  Upon launching the application, navigate through different pages using the sidebar menu.
-2.  Follow on-screen instructions for each activity:
-    -   Listen to audio cues for guessing animal sounds and solving riddles.
-    -   Select options for quiz questions.
-    -   Input objects or places for visualization descriptions.
-3.  Enjoy the interactive experience!
+To use VisioFun:
+1. Clone the repository to your local machine.
+2. Install the required dependencies by running `pip install -r requirements.txt`.
+3. Run the Streamlit application by executing `streamlit run main.py`.
+4. Alternatively, you can access the application through the following link: [VisioFun Web App](https://visiofun.streamlit.app/).
 
-## Additional Notes
+## Tech Stack and Technologies Used
 
--   The application leverages the Cohere API for generating text descriptions, enhancing accessibility for visually impaired users.
--   Feel free to customize the activities, add new features, or modify the UI to suit your preferences.
-
-## Credits
-
-This project utilizes open-source libraries and APIs to provide a rich and engaging user experience:
-
--   [Streamlit](https://streamlit.io/) for building interactive web applications with Python.
--   [gTTS (Google Text-to-Speech)](https://gtts.readthedocs.io/en/latest/) for generating audio files from text.
--   [Cohere API](https://cohere.ai/) for text generation capabilities.
+- **Streamlit**: Framework for building interactive web applications with Python.
+- **TensorFlow**: Open-source machine learning framework for image recognition tasks.
+- **Cohere API**: Natural language processing API for generating descriptive text based on input prompts.
+- **PIL (Python Imaging Library)**: Library for image processing tasks.
+- **gTTS (Google Text-to-Speech)**: Library for converting text descriptions into speech.
+- **NumPy**: Fundamental package for scientific computing in Python.
+- **IPython.display**: Module for playing audio files within the application.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
