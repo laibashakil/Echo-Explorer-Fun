@@ -1,3 +1,6 @@
-cohere
 streamlit
-gTTS
+gtts
+cohere
+Pillow
+tensorflow
+numpy
