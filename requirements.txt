@@ -4,3 +4,4 @@ cohere
 Pillow
 tensorflow
 numpy
+IPython
